@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mallow for All — Natural Skincare</title>
+  <link rel="icon" type="image/png" href="Picture/Logo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+      <div class="brand">
+        <img src="./Picture/Logo.jpg" alt="Mallow Logo" />
+        <span>Mallow for All</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <!-- Menu toggle (3 dots) -->
+        <button id="menuToggle" class="menu-toggle">☰</button>
+
+        <!-- Cart -->
+        <div class="cart" id="cartIcon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0 1.425 
+              5.33a2.25 2.25 0 002.182 1.648h8.708a2.25 2.25 0 
+              002.182-1.648l1.425-5.33H5.106zM9 21a.75.75 0 
+              100-1.5.75.75 0 000 1.5zm9 0a.75.75 0 
+              100-1.5.75.75 0 000 1.5z" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+          <h1>Natural Care, Minimal Design</h1>
+          <p>
+            At <strong>Mallow for All</strong>, we bring nature’s care to your skin through thoughtfully crafted soaps and shampoos — made from natural ingredients, chemical-free, and gentle on every skin type.
+          </p>          
+          <button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+            Explore Products
+          </button>
+        </div>
+        <img src="Picture/Home pic.png" alt="Natural skincare hero image" />
+    </section>
+
+    <section class="section" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <!-- ===== Product Details Modal ===== -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+
+        <div class="product-detail">
+          <!-- Left: Image -->
+          <div class="detail-image">
+            <img id="modalImg" src="" alt="Product Image">
+          </div>
+
+          <!-- Right: Info -->
+          <div class="detail-info">
+            <h2 id="modalTitle"></h2>
+            <p class="price" id="modalPrice"></p>
+
+            <div class="qty-section">
+              <label>Quantity:</label>
+              <div class="qty-control">
+                <button id="decreaseQty">−</button>
+                <span id="qtyValue">1</span>
+                <button id="increaseQty">+</button>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button id="addToCartBtn" class="btn">Add to Cart</button>
+              <button id="buyNowBtn" class="btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lower Details -->
+        <div class="detail-desc">
+          <p id="modalDesc"></p>
+          <p><strong>Key Benefits:</strong> <span id="modalBenefits"></span></p>
+          <p><strong>Main Ingredients:</strong> <span id="modalIngredients"></span></p>
+          <p><strong>Skin Type:</strong> <span id="modalSkin"></span></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              <strong>Mallow for All</strong> is a homegrown brand dedicated to crafting natural, gentle, and effective skincare products. 
+              Each bar of soap and bottle of shampoo is made with pure ingredients, free from harsh chemicals, to bring you closer to nature’s simplicity.
+            </p>
+            <p>
+              Our mission is to make self-care accessible and honest. We focus on small-batch production, eco-friendly packaging, 
+              and sustainable sourcing — because your skin deserves purity, and our planet deserves care.
+            </p>
+            <p>
+              From <strong>charcoal</strong> to <strong>kesar chandan</strong>, each product is created with love and authenticity. 
+              We don’t just make soaps — we make experiences that nurture your skin and calm your mind.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="Picture/BRAND.jpg" alt="About Mallow for All" />
+          </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <hr class="section-divider">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <!-- Left: Form -->
+          <div class="contact-form">
+            <p>We’d love to hear from you! Fill out the form below, and we’ll get back soon.</p>
+            <form id="contactForm">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <input type="email" id="email" placeholder="Your Email" required />
+              <textarea id="message" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="responseMsg" class="response"></p>
+          </div>
+      
+          <!-- Right: Address -->
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Address:</strong><br>Mallow for All, Green Valley Street,<br>Indore, Madhya Pradesh 411001</p>
+            <p><strong>Phone:</strong><br><a href="tel:+918120143920">+91 81201 43920</a></p>
+
+            <div class="social-links">
+              <a href="mailto:mallowforall@gmail.com" aria-label="Email">
+                📧 Email
+              </a>
+              <a href="https://www.instagram.com/mallowforall/" target="_blank" aria-label="Instagram">
+                📸 Instagram
+              </a>
+              <a href="https://wa.me/918120143920" target="_blank" aria-label="WhatsApp">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+    <!-- Cart Panel -->
+    <div id="cartPanel" class="cart-panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <span id="closeCart" class="close-cart">&times;</span>
+      </div>
+  
+      <div id="cartItems" class="cart-items"></div>
+  
+      <div class="cart-footer">
+        <p><strong>Total:</strong> <span id="cartTotal">₹0</span></p>
+        <div class="cart-buttons">
+          <button class="btn" id="checkoutBtn">Checkout</button>
+          <button class="btn" id="clearCartBtn">Clear</button>
+        </div>
+      </div>
+    </div>
+
+<script src="script.js"></script>
+</body> 
+</html>

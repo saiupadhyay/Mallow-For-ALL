@@ -1,53 +1,48 @@
-Mallow for All
+# Mallow for All
 
-Mallow for All is a community-driven project focused on accessibility, inclusion, and equal access to resources through technology and collaboration. The project aims to lower barriers and create tools or initiatives that are usable, affordable, and welcoming to everyone.
+Mallow for All is a community-driven project focused on accessibility, inclusion, and equal access to resources through technology and collaboration. The project aims to reduce barriers and create solutions that are usable, affordable, and welcoming to everyone.
 
-🌍 Mission
+## Mission -
 
-Our mission is to ensure that everyone—regardless of background, ability, or circumstance—has access to tools, knowledge, and opportunities that empower them to participate fully in society.
+To ensure that people of all backgrounds and abilities have access to tools, knowledge, and opportunities that empower full participation in society.
 
+## Features -
 
-✨ Features
+- Inclusive-by-design approach  
+- Community-supported and open development  
+- Accessibility-first mindset  
+- Scalable and adaptable for diverse use cases  
 
-- Inclusive-by-design approach
-- Open and community-supported development
-- Accessible user experience and documentation
-- Scalable and adaptable for different communities
-  
+## Tech Stack -
 
-🛠️ Tech Stack
+> Update this section based on the actual implementation.
 
-|| Update this section based on your actual implementation.
+- Frontend: TBD  
+- Backend: TBD  
+- Database: TBD  
+- Deployment: TBD  
 
-- Frontend: TBD
+## Getting Started
 
-- Backend: TBD
+### Prerequisites
 
-- Database: TBD
+- Git  
+- Node.js / Python / other runtime (as applicable)
 
-- Deployment: TBD
+### Installation
 
-
-🚀 Getting Started
-
-Prerequisites
-
-* Git
-* Node.js / Python / other (as applicable)
-
-Installation
-
+```bash
 git clone https://github.com/your-username/mallow-for-all.git
 cd mallow-for-all
+```
 
-Example
+# Example
+
 npm install
 npm run dev
 
+## mallow-for-all/
 
-📁 Project Structure
-
-mallow-for-all/
 ├── src/
 ├── docs/
 ├── public/
@@ -56,37 +51,39 @@ mallow-for-all/
 └── LICENSE
 
 
-🤝 Contributing
+## Contributing
 
-Contributions are welcome and encouraged.
+Contributions are welcome.
 
-1. Fork the repository
-2. Create a new branch (feature/your-feature-name)
-3. Commit your changes
-4. Open a pull request
+- Fork the repository
+- Create a feature branch (feature/your-feature-name)
+- Commit your changes
+- Open a pull request
 
-Please follow the project’s code of conduct and contribution guidelines.
-
-
-♿ Accessibility Commitment
-
-Accessibility is a core principle of Mallow for All. We aim to:
-
-- Follow WCAG guidelines where applicable
-- Use inclusive language
-- Design with diverse users in mind
-
-Feedback on accessibility improvements is always welcome.
+Please follow the project’s contribution guidelines and code of conduct.
 
 
-📄 License
+## Accessibility Commitment
 
-This project is licensed under the MIT License (or update as appropriate).
+Accessibility is a core principle of Mallow for All. The project aims to:
+
+- Follow relevant WCAG guidelines
+- Use clear and inclusive language
+- Design with diverse users and assistive technologies in mind
+
+Suggestions and feedback related to accessibility are encouraged.
 
 
-📬 Contact
+## License
 
-For questions, ideas, or collaboration inquiries:
+This project is licensed under the MIT License unless stated otherwise.
 
-- Email: your-email@example.com
-- GitHub Issues: Use the Issues tab in this repository
+
+## Contact
+
+For questions, ideas, or collaboration:
+
+- **GitHub Issues:** Use the Issues tab in this repository
+
+- **Email:** your-email@example.com
+
